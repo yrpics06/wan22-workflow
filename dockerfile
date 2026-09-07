@@ -40,7 +40,7 @@ COPY download_models.sh /workspace/download_models.sh
 COPY start.sh /workspace/start.sh
 RUN chmod +x /workspace/download_models.sh /workspace/start.sh
 RUN sed -i 's/\r$//' /workspace/download_models.sh /workspace/start.sh
-RUN bash /workspace/download_models.sh
+
 
 EXPOSE 8188
 
