@@ -49,24 +49,24 @@ fi
 echo "===== Downloading custom LoRAs ====="
 
 # 1. Grinding Cowgirl
-if [ ! -f models/loras/WAN-2.2-I2V-Grinding-Cowgirl-HIGH-v1.safetensors ]; then
-  echo "Downloading Grinding Cowgirl LoRA..."
-  wget --user-agent="Mozilla/5.0" -c -O models/loras/WAN-2.2-I2V-Grinding-Cowgirl-HIGH-v1.safetensors \
-    "https://civitai.red/api/download/models/2613687?fileId=2501075"
+if [ ! -f models/loras/WAN-2.2-I2V-Grinding-Cowgirl-HIGH-v1.safetensors ]; then[cite: 1]
+  echo "Downloading Grinding Cowgirl LoRA..."[cite: 1]
+  wget -c -O models/loras/WAN-2.2-I2V-Grinding-Cowgirl-HIGH-v1.safetensors \
+    "https://huggingface.co/yrpics06/my-wan22-loras/resolve/main/WAN-2.2-I2V-Grinding-Cowgirl-HIGH-v1.safetensors?download=true"
 fi
 
 # 2. Fullnelson
-if [ ! -f models/loras/wan22-fullnelson-i2v-108epoc-high-k3nk.safetensors ]; then
-  echo "Downloading Fullnelson LoRA..."
-  wget --user-agent="Mozilla/5.0" -c -O models/loras/wan22-fullnelson-i2v-108epoc-high-k3nk.safetensors \
-    "https://civitai.red/api/download/models/2169837?fileId=2063792"
+if [ ! -f models/loras/wan22-fullnelson-i2v-108epoc-high-k3nk.safetensors ]; then[cite: 1]
+  echo "Downloading Fullnelson LoRA..."[cite: 1]
+  wget -c -O models/loras/wan22-fullnelson-i2v-108epoc-high-k3nk.safetensors \
+    "https://huggingface.co/yrpics06/my-wan22-loras/resolve/main/wan22-fullnelson-i2v-108epoc-high-k3nk.safetensors?download=true"
 fi
 
 # 3. Pussyjob
-if [ ! -f models/loras/pussyjob_v1.0_wan2.1_14b.safetensors ]; then
-  echo "Downloading Pussyjob LoRA..."
-  wget --user-agent="Mozilla/5.0" -c -O models/loras/pussyjob_v1.0_wan2.1_14b.safetensors \
-    "https://civitai.red/api/download/models/2332735?fileId=2222747"
+if [ ! -f models/loras/pussyjob_v1.0_wan2.1_14b.safetensors ]; then[cite: 1]
+  echo "Downloading Pussyjob LoRA..."[cite: 1]
+  wget -c -O models/loras/pussyjob_v1.0_wan2.1_14b.safetensors \
+    "https://huggingface.co/yrpics06/my-wan22-loras/resolve/main/pussyjob_v1.0_wan2.1_14b.safetensors?download=true"
 fi
 
 echo "===== All downloads completed ====="
