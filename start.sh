@@ -1,13 +1,13 @@
 #!/bin/bash
 set -e
 
-echo "===== Starting ComfyUI for Wan 2.2 ====="
+echo "===== Checking models ====="
 
 if [ ! -f /workspace/ComfyUI/models/diffusion_models/wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors ]; then
-    echo "Models not found. Starting download..."
+    echo "Downloading models at high speed..."
     /workspace/download_models.sh
 else
-    echo "Models already present."
+    echo "Models ready!"
 fi
 
 cd /workspace/ComfyUI
