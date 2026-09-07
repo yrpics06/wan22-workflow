@@ -41,7 +41,6 @@ COPY start.sh /workspace/start.sh
 RUN chmod +x /workspace/download_models.sh /workspace/start.sh
 RUN sed -i 's/\r$//' /workspace/download_models.sh /workspace/start.sh
 RUN bash /workspace/download_models.sh
-COPY my_loras/* /workspace/ComfyUI/models/loras/
 
 EXPOSE 8188
 
